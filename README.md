@@ -1,7 +1,7 @@
 
-# Almacenamiento de Vectores con MongoDB y OpenAI Embeddings
+# Creación de base de datos vectorial con MongoDB y OpenAI Embeddings
 
-Este proyecto demuestra cómo construir un sistema de almacenamiento de vectores utilizando MongoDB para almacenar documentos y los modelos de embeddings de OpenAI para una eficiente recuperación de información. El sistema aprovecha el framework LangChain para gestionar la carga de documentos, división de texto y consultas.
+Este script se utiliza para la generación de la base de datos vectorial con el contenido bibliográfico seleccionado. Se utiliza el framework LangChain para gestionar la carga de documentos, división de texto y consultas.
 
 ## Características
 
@@ -13,10 +13,11 @@ Este proyecto demuestra cómo construir un sistema de almacenamiento de vectores
 ## Requisitos
 
 - Python 3.8 o superior
-- Una instancia de MongoDB
+- Una instancia de MongoDB, preferentemente en Mongo Atlas.
 - Clave de API de OpenAI
+- Cuenta en Google Colabs
 
-## Configuración
+## Configuración recomendada
 
 1. **Clonar el repositorio:**
    ```bash
@@ -24,13 +25,23 @@ Este proyecto demuestra cómo construir un sistema de almacenamiento de vectores
    cd tu-repo-aqui
    ```
 
-2. **Instalar dependencias:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+2. **Carga en Google Drive:**
+
 
 3. **Configurar MongoDB:**
-   Asegúrate de tener una instancia de MongoDB en funcionamiento y accesible. Actualiza la cadena de conexión de MongoDB en la parte correspondiente del código.
+   Asegúrate de tener una instancia de MongoDB en funcionamiento y accesible. Actualiza la cadena de conexión de MongoDB en la parte correspondiente del código. Configurar el Vector Search con el siguiente objeto JSON
+   ```
+      {
+     "fields": [
+       {
+         "numDimensions": 1024,
+         "path": "embedding",
+         "similarity": "cosine",
+         "type": "vector"
+       }
+     ]
+   }
+   ´´´
 
 4. **Configurar la clave de API de OpenAI:**
    Configura tu clave de API de OpenAI como una variable de entorno:
@@ -39,10 +50,7 @@ Este proyecto demuestra cómo construir un sistema de almacenamiento de vectores
    ```
 
 5. **Ejecutar el notebook:**
-   Abre y ejecuta el notebook de Jupyter:
-   ```bash
-   jupyter notebook vector-store-mongoDB-openai.ipynb
-   ```
+   Ejecutar preferentemente con una instancia T4 de Google Colab
 
 ## Uso
 
@@ -55,6 +63,3 @@ Este proyecto demuestra cómo construir un sistema de almacenamiento de vectores
 - Puedes modificar la lógica de división de documentos o el modelo utilizado para la generación de embeddings según tus necesidades.
 - Los nombres de la colección y la base de datos de MongoDB se pueden ajustar en el archivo de configuración.
 
-## Licencia
-
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
