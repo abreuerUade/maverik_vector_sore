@@ -1,5 +1,5 @@
 
-# Creación de base de datos vectorial con MongoDB y OpenAI Embeddings
+# Proyecto Maverik: Creación de base de datos vectorial con MongoDB y OpenAI Embeddings
 
 Este script se utiliza para la generación de la base de datos vectorial con el contenido bibliográfico seleccionado. Se utiliza el framework LangChain para gestionar la carga de documentos, división de texto y consultas.
 
