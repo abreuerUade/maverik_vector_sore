@@ -39,7 +39,7 @@ Este script se utiliza para la generación de la base de datos vectorial con el 
          "type": "vector"
        }
      ]
-   ´´´
+  
 
 4. **Configurar la clave de API de OpenAI:**
    Configura tu clave de API de OpenAI como una variable de entorno:
