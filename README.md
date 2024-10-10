@@ -31,7 +31,6 @@ Este script se utiliza para la generación de la base de datos vectorial con el 
 3. **Configurar MongoDB:**
    Asegúrate de tener una instancia de MongoDB en funcionamiento y accesible. Actualiza la cadena de conexión de MongoDB en la parte correspondiente del código. Configurar el Vector Search con el siguiente objeto JSON
    ```bash
-      {
      "fields": [
        {
          "numDimensions": 1024,
@@ -40,7 +39,6 @@ Este script se utiliza para la generación de la base de datos vectorial con el 
          "type": "vector"
        }
      ]
-   }
    ´´´
 
 4. **Configurar la clave de API de OpenAI:**
