@@ -21,7 +21,7 @@ Este script se utiliza para la generación de la base de datos vectorial con el 
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone https://github.com/tu-repo-aqui.git](https://github.com/abreuerUade/maverik_vector_store.git
+   git clone https://github.com/abreuerUade/maverik_vector_store.git
    cd maverik_vector_store
    ```
 
