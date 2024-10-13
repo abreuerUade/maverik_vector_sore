@@ -58,6 +58,6 @@ Este script se utiliza para la generación de la base de datos vectorial con el 
 
 ## Personalización
 
-- Puedes modificar la lógica de división de documentos o el modelo utilizado para la generación de embeddings según tus necesidades.
+- Se puede modificar la lógica de división de documentos o el modelo utilizado para la generación de embeddings según tus necesidades.
 - Los nombres de la colección y la base de datos de MongoDB se pueden ajustar en el archivo de configuración.
 
